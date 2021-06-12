@@ -1,0 +1,21 @@
+#team-header {
+    border: 5px solid red;
+    text-align: center;
+}
+
+#wrapper {
+    border: 5px solid pink;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#main-content-block {
+    font-display: grid;
+}
+.names {
+    display: grid;
+    border: 4px solid green;
+    text-align: center;
+}
