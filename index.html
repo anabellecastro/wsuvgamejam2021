@@ -34,11 +34,95 @@
       </div>
     </nav>
 
-    <div id="wrapper"></div>
+    <div id="wrapper">
+      <section class="home">
+        <div class="overlay"></div>
+      </section>
+      <section class="video">
+        <div class="video-overlay">
+          <div class="video-section">
+            <div class="video-container">
+              <iframe
+                class="responsive-iframe"
+                src="https://www.youtube.com/embed/NpEaa2P7qZI?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-container">
+        <div class="section-title">
+          <h2>Title</h2>
+          <div class="main-section">
+            <div class="grid">
+              <div class="main-1">
+                <img src="img/placeholder.png" />
+              </div>
+              <div class="main-2">
+                <h3>Title</h3>
+                <p>
+                  Computer, lights up! Worf, It’s better than music. It’s jazz.
+                  Mr. Worf, you do remember how to fire phasers? When has
+                  justice ever been as simple as a rule book? Then maybe you
+                  should consider this: if anything happens to them, Starfleet
+                  is going to want a full investigation.
+                </p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="main-3">
+                <h3>Title</h3>
+                <p>
+                  You bet I’m agitated! I may be surrounded by insanity, but I
+                  am not insane. Congratulations - you just destroyed the
+                  Enterprise. The Enterprise computer system is controlled by
+                  three primary main processor cores, cross-linked with a
+                  redundant melacortz ramistat, fourteen kiloquad interface
+                  modules.
+                </p>
+              </div>
+              <div class="main-4">
+                <img src="img/placeholder.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <!--closes wrapper-->
 
     <footer></footer>
 
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      /* NAV ON SCROLL FUNCTION */
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".nav").addClass("affix");
+          $(".nav").addClass("linkScroll");
+          console.log("OK");
+        } else {
+          $(".nav").removeClass("affix");
+          $(".nav").removeClass("linkScroll");
+        }
+      });
+    </script>
+    <script>
+      /* NAV HAMBURGER MENU */
+
+      $(".navTrigger").click(function () {
+        $(this).toggleClass("active");
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
+        $(".nav").toggleClass("navScroll");
+      });
+    </script>
   </body>
 </html>
