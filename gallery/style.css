@@ -18,6 +18,9 @@ body {
   background-position: center top;
   background-size: cover;
 }
+.logo {
+  height: 50px;
+}
 
 .overlay {
   width: 100%;
