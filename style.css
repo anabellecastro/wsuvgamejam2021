@@ -1,3 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url("https://use.typekit.net/lsl1iaw.css");
+html,
+
 body {
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-size: 10px;
+  font-family: "Fira Sans", sans-serif;
+  background: #28113b;
 }
+
+.header-title {
+    font-family: p22-pooper-black-pro, sans-serif;
+    color: #f8f8ff;
+    font-size: 10rem;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: #ffffff;
+    position: absolute;
+    top: 15%;
+  }
+  
+h2 {
+    text-align: center;
+    font-size: 4em;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.game-btn {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    color: #e5e5e5;
+    font-size: 2rem;
+    background: #00aebe;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: solid #00aebe 2px;
+}
+
+.game-btn:hover {
+    background: #e5e5e5;
+    border: solid #00aebe 2px;
+    text-decoration: none;
+    color: #00aebe;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-title {
+      font-size: 8rem;
+    }
+  }
+  
+@media screen and (max-width: 768px) {
+    .header-title {
+        font-size: 6rem;
+      }
+    }
