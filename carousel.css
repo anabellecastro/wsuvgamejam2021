@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(102, 52, 52, 0);
+}
+.carousel-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.carouselwrapper {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 500px;
+  position: relative;
+  top: 0;
+  background-image: url("img/bottom-bg.png");
+  background-position: center top;
+  background-size: cover;
+}
+.carouselwrapper > div {
+  width: 100%;
+}
+.carouselwrapper__gallery {
+  padding: 60px 40px 60px;
+}
+.carouselwrapper__gallery_slide {
+  width: 100%;
+  text-align: center;
+}
+.carouselwrapper__gallery_slide p {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 2em;
+}
+.carouselwrapper__gallery_slide img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 60px;
+  padding-top: 30px;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+ul.slick-dots {
+  list-style: none;
+  text-align: center;
+}
+
+ul.slick-dots li:not(last-child) {
+  display: inline-block;
+  margin-right: 5px;
+}
+ul.slick-dots li:not(last-child).slick-active button {
+  background: #274d6b;
+  width: 11px;
+  height: 11px;
+  border: 0px;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+}
+ul.slick-dots li:not(last-child) button {
+  box-shadow: none;
+  border: 0;
+  transition: all 0.1s ease;
+  font-size: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+ul.slick-dots li:not(last-child) button:focus,
+ul.slick-dots li:not(last-child) button:active {
+  outline: none;
+}
+.carousel-btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #e5e5e5;
+  font-size: 2rem;
+  background: #00aebe;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: solid #00aebe 2px;
+  margin-bottom: 25px;
+}
+
+.carousel-btn:hover {
+  background: #e5e5e5;
+  border: solid #00aebe 2px;
+  text-decoration: none;
+  color: #00aebe;
+  cursor: pointer;
+}

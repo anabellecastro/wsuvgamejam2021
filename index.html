@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   </head>
   <style>
     .home {
@@ -19,7 +22,7 @@
     <nav class="nav">
       <div class="container">
         <div class="logo">
-          <a href="#"><img src="img/placeholder.png" class="logo-img" /></a>
+          <a href="#"><img src="img/huli-logo2.png" class="logo-img" /></a>
         </div>
         <div id="mainListDiv" class="main_list">
           <ul class="navlinks">
@@ -43,7 +46,7 @@
 
     <div id="wrapper">
       <section class="home">
-        <div class="overlay"></div>
+        <div class="overlay"><h1 class="header-title">Huli</h1></div>
       </section>
       <section class="video">
         <div class="video-overlay">
@@ -99,14 +102,69 @@
           </div>
         </div>
       </section>
+      <section class="carousel-container">
+        <div class="carousel-overlay">
+          <div class="carouselwrapper">
+            <div class="carouselwrapper__gallery">
+              <div class="carouselwrapper__gallery_slide">
+                <img src="img/placeholder-1.png" alt="" />
+                <p>Description.</p>
+                <a href="#"><button class="carousel-btn">btn</button></a>
+              </div>
+              <div class="carouselwrapper__gallery_slide">
+                <img src="img/placeholder-2.png" alt="" />
+                <p>Description.</p>
+                <a href="#"><button class="carousel-btn">btn</button></a>
+              </div>
+              <div class="carouselwrapper__gallery_slide">
+                <img src="img/placeholder-3.png" alt="" />
+                <a href="#"><button class="carousel-btn">btn</button></a>
+                <p>Description.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <!--closes wrapper-->
 
-    <footer></footer>
+    <footer>
+      <div class="footer-grid-containter">
+        <div class="footer-item footer-item-1">
+          <img
+            class="footer-img"
+            src="img/slow-jam-logo.png"
+            alt="PIGSquad Logo"
+          />
+        </div>
+
+        <div class="footer-item footer-item-2">
+          <img
+            class="footer-img"
+            src="img/cmdc-logo.png"
+            alt="CMDC Program Logo"
+          />
+        </div>
+
+        <div class="footer-item footer-item-3">
+          <img class="footer-img" src="img/PIGlogo.png" alt="PIGSquad Logo" />
+        </div>
+      </div>
+      <div class="copyright"><p>©CMDC 2021</p></div>
+    </footer>
 
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
       /* NAV ON SCROLL FUNCTION */
       $(window).scroll(function () {
@@ -130,6 +188,23 @@
         $("#mainListDiv").fadeIn();
         $(".nav").toggleClass("navScroll");
       });
+    </script>
+    <script>
+      let options = {
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        dots: true,
+        autoplay: true,
+      };
+
+      let selector = $(".carouselwrapper__gallery");
+
+      const initSlickSlider = (options) => {
+        selector.not("slick-initialised").slick({ ...options });
+      };
+
+      initSlickSlider(options);
     </script>
   </body>
 </html>
