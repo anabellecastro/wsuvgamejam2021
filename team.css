@@ -34,8 +34,8 @@
   margin: 0 auto;
   background: linear-gradient(
     0deg,
-    rgba(40, 17, 59, 1) 0%,
-    rgba(27, 20, 100, 1) 100%
+    rgba(39, 16, 58, 1) 0%,
+    rgba(30, 20, 86, 1) 100%
   );
 }
 .team-section {
@@ -93,7 +93,7 @@
 footer {
   background: linear-gradient(
     0deg,
-    rgba(27, 20, 100, 1) 0%,
-    rgba(40, 17, 59, 1) 100%
+    rgba(30, 20, 86, 1) 0%,
+    rgba(39, 16, 58, 1) 100%
   );
 }
