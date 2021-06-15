@@ -29,7 +29,6 @@
 .carouselwrapper {
   display: flex;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   min-height: 500px;
   position: relative;
@@ -70,12 +69,13 @@ ul.slick-dots {
   list-style: none;
   text-align: center;
 }
+
 ul.slick-dots li:not(last-child) {
   display: inline-block;
   margin-right: 5px;
 }
 ul.slick-dots li:not(last-child).slick-active button {
-  background: #34495e;
+  background: #274d6b;
   width: 11px;
   height: 11px;
   border: 0px;
