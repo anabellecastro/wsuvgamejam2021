@@ -178,6 +178,9 @@ h2 {
   .video-section > ul > li > figure {
     padding-bottom: 0;
   }
+  .home {
+    height: 50vh;
+  }
 }
 
 footer {
