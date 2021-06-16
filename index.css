@@ -8,6 +8,7 @@
   font-size: 15rem;
   font-weight: 400;
 }
+
 h3 {
   color: #ffffff;
   font-size: 3em;
@@ -20,7 +21,7 @@ h3 {
   padding: 50px 0;
 }
 
-p {
+.main-section p {
   color: #ffffff;
   font-size: 1.4em;
   line-height: 1.7em;
@@ -159,6 +160,13 @@ video {
   }
   .home {
     height: 75vh;
+  }
+}
+
+@media (min-width: 990px) {
+  .main-section p {
+    font-size: 1.9em;
+    line-height: 2.2em;
   }
 }
 
