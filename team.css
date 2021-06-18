@@ -38,6 +38,7 @@
     rgba(30, 20, 86, 1) 100%
   );
 }
+
 .team-section {
   width: 85%;
   margin-left: auto;
@@ -48,13 +49,10 @@
 
 .team-section > ul {
   padding-left: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   grid-gap: 1rem;
 }
 
 .team-section > ul > li {
-  margin-bottom: 10%;
   max-height: 100%;
   overflow: hidden;
 }
