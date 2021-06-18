@@ -198,9 +198,9 @@ video {
   border-radius: 10px; /* FOR PLACEHOLDER PURPOSES. REMOVE LATER. */
 }
 
-.bg:hover {
+/* .bg:hover {
   transform: scale(1.1, 1.1);
-}
+} */
 
 @media (max-width: 991px) {
   .gallery a {

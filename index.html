@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="footer.css" />
     <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+    />
   </head>
 
   <body>
@@ -46,7 +50,10 @@
     <div id="wrapper">
       <section class="home">
         <div class="overlay">
-          <h1 class="header-title">Huli</h1>
+          <img class="index-bg" src="img/index-bg.png" />
+          <div class="header-title">
+            <img class="header-logo" src="img/huli-logo2.png" />
+          </div>
         </div>
       </section>
       <section class="video">
@@ -103,25 +110,46 @@
           </div>
         </div>
       </section>
-      <section class="carousel-container">
-        <div class="carousel-overlay">
-          <div class="carouselwrapper">
-            <div class="carouselwrapper__gallery">
-              <div class="carouselwrapper__gallery_slide">
-                <img src="img/placeholder-1.png" alt="" />
-                <p>Description.</p>
-                <a href="#"><button class="carousel-btn">btn</button></a>
+      <section class="slider-container">
+        <div class="slider-overlay">
+          <div class="slider-main">
+            <div class="slider slider-nav">
+              <div>
+                <div class="gallery-slide">
+                  <img src="img/placeholder-1.png" class="slider-img" />
+                </div>
               </div>
-              <div class="carouselwrapper__gallery_slide">
-                <img src="img/placeholder-2.png" alt="" />
-                <p>Description.</p>
-                <a href="#"><button class="carousel-btn">btn</button></a>
+              <div>
+                <div class="gallery-slide">
+                  <img src="img/placeholder-3.png" class="slider-img" />
+                </div>
               </div>
-              <div class="carouselwrapper__gallery_slide">
-                <img src="img/placeholder-3.png" alt="" />
-                <a href="#"><button class="carousel-btn">btn</button></a>
-                <p>Description.</p>
+              <div>
+                <div class="gallery-slide">
+                  <img src="img/placeholder-2.png" class="slider-img" />
+                </div>
               </div>
+              <div>
+                <div class="gallery-slide">
+                  <img src="img/placeholder-1.png" class="slider-img" />
+                </div>
+              </div>
+              <div>
+                <div class="gallery-slide">
+                  <img src="img/placeholder-1.png" class="slider-img" />
+                </div>
+              </div>
+            </div>
+            <div class="btn-contain">
+              <a href="gallery.html"
+                ><button class="slide-btn">Gallery</button></a
+              >
+            </div>
+            <div class="circle prev">
+              <i class="fas fa-2x fa-chevron-left"></i>
+            </div>
+            <div class="circle next">
+              <i class="fas fa-2x fa-chevron-right"></i>
             </div>
           </div>
         </div>
@@ -166,8 +194,8 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!--NAV ON SCROLL-->
     <script>
-      /* NAV ON SCROLL FUNCTION */
       $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {
           $(".nav").addClass("affix");
@@ -179,9 +207,8 @@
         }
       });
     </script>
+    <!--NAV TOGGLE-->
     <script>
-      /* NAV HAMBURGER MENU */
-
       $(".navTrigger").click(function () {
         $(this).toggleClass("active");
         console.log("Clicked menu");
@@ -190,22 +217,34 @@
         $(".nav").toggleClass("navScroll");
       });
     </script>
+    <!--SLICK CAROUSEL-->
     <script>
-      let options = {
-        slidesToScroll: 1,
+      $(".slider-nav").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         arrows: false,
-        infinite: false,
         dots: true,
         autoplay: true,
-      };
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+            // settings: "unslick"
+          },
+        ],
+      });
+      $(".next").click(function () {
+        $(".slider").slick("slickNext");
+      });
 
-      let selector = $(".carouselwrapper__gallery");
-
-      const initSlickSlider = (options) => {
-        selector.not("slick-initialised").slick({ ...options });
-      };
-
-      initSlickSlider(options);
+      $(".prev").click(function () {
+        $(".slider").slick("slickPrev");
+      });
     </script>
   </body>
 </html>
