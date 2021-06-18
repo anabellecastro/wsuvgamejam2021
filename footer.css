@@ -6,30 +6,13 @@ footer {
   text-align: center;
   margin: 0 auto;
 }
-.footer-img {
-  display: inline-block;
-  max-height: 75px;
-  width: auto;
+footer > img {
+  width: 80%;
+  height: auto;
 }
 
-.footer-grid-containter {
-  display: grid;
-  gap: 25px;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  margin: 0 auto;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-item-3 img {
-  width: 150px;
-}
 
 .copyright {
+  font-size: 1.5em;
   padding-bottom: 25px;
 }
