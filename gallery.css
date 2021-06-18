@@ -81,57 +81,7 @@ h2 {
   cursor: pointer;
 }
 
-/* ART GRID */
-
-.art {
-  width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-  background: linear-gradient(
-    0deg,
-    rgba(27, 20, 100, 1) 0%,
-    rgba(39, 16, 58, 1) 100%
-  );
-  padding-bottom: 5%;
-}
-
-.section-title {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.art-section {
-  width: 100%;
-}
-
-.art-section > ul {
-  padding-left: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  grid-gap: 1rem;
-}
-
-.art-section > ul > li {
-  list-style: none;
-}
-
-.art-section > ul > li > figure {
-  max-height: 100%;
-  overflow: hidden;
-}
-
-.art-section > ul > li > figure > img {
-  border-radius: 0.5rem;
-  width: 100%;
-}
-
-/* VIDEOS */
-
-/* VIDEO TRAILER SECTION */
+/* VIDEO SECTION */
 video {
   background-color: #28113b;
   width: 100%;
@@ -172,6 +122,110 @@ video {
   height: 100%;
 }
 
+/* ART SECTION */
+
+.art {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background: linear-gradient(
+    0deg,
+    rgba(27, 20, 100, 1) 0%,
+    rgba(39, 16, 58, 1) 100%
+  );
+  padding-bottom: 5%;
+}
+
+.section-title {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.art-section {
+  width: 100%;
+}
+
+/* FANCYBOX LIGHT GALLERY */
+*:after,
+:before {
+  box-sizing: border-box;
+}
+
+.clear:after,
+.clear:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 50px);
+  margin: 60px auto 0;
+}
+
+.gallery a {
+  display: block;
+  text-decoration: none;
+  width: 30%;
+  margin: 0 auto;
+  padding: 1%;
+  overflow: hidden;
+  outline: none;
+}
+
+.gallery a img {
+  height: 100%;
+  transform: scale(1, 1);
+  transition: all 300ms ease;
+}
+
+.gallery a img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.bg {
+  width: 100%;
+  min-height: 250px;
+  background-size: cover;
+  transform: scale(1, 1);
+  transition: all 300ms ease;
+  border-radius: 10px; /* FOR PLACEHOLDER PURPOSES. REMOVE LATER. */
+}
+
+.bg:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 991px) {
+  .gallery a {
+    width: 70%;
+  }
+  .bg {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery a {
+    width: 100%;
+  }
+
+  .bg {
+    height: 300px;
+  }
+}
+
+h1 a {
+  color: #000;
+}
+
+/* FOOTER GRADIENT */
 footer {
   width: 100%;
   overflow: hidden;
@@ -181,9 +235,4 @@ footer {
     rgba(27, 20, 100, 1) 0%,
     rgba(39, 16, 58, 1) 100%
   );
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 768px) {
 }
