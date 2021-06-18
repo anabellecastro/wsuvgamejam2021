@@ -85,7 +85,7 @@
   color: #00aebe;
   cursor: pointer;
 }
-/* Media qurey section */
+/* Media query section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
@@ -97,9 +97,15 @@
   .navTrigger {
     display: block;
   }
-  .nav div.logo {
-    margin-left: 15px;
+
+  .header-title img {
+    visibility: hidden;
   }
+
+  /* HIDE LOGO ON MOBILE */
+  /* .nav div.logo {
+    visibility: hidden;
+  } */
 
   /* .nav div.logo .logo-img {
     height: 65px;
@@ -351,3 +357,10 @@
   background-color: rgba(0, 0, 0, 0.7);
   height: 105px;
 }
+
+/* REVEALS LOGO ON SCROLL */
+/* @media screen and (max-width: 768px) {
+  .nav.linkScroll div.logo {
+    visibility: visible;
+  }
+} */
