@@ -1,14 +1,44 @@
 /* INDEX SPECIFIC CSS */
 
-.home {
-  height: 100vh;
-  background-image: url("img/index-bg.png");
+#wrapper {
+  margin: 0 auto;
+  padding: 0;
 }
-.header-title {
-  font-size: 15rem;
-  font-weight: 400;
+/* Home section */
+
+.home {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
+.overlay {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.header-title {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.index-bg {
+  max-width: 100%;
+  height: auto;
+}
+.header-logo {
+  width: 50%;
+  margin: 0 auto;
+}
 h3 {
   color: #ffffff;
   font-size: 3em;
@@ -28,18 +58,7 @@ h3 {
   text-align: left;
 }
 
-.overlay {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-
-/* VIDEO TRAILER SECTION */
+/* VIDEO SECTION */
 video {
   background-color: #28113b;
   width: 100%;
@@ -49,34 +68,20 @@ video {
 
 .video-overlay {
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  background-image: url("img/background1.png");
+  background-position: center top;
+  background-size: cover;
 }
 
 .video-section {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  width: 70%;
+  margin-top: 10%;
 }
 
-.video-section > ul {
-  display: grid;
-  margin: 0 auto;
-}
-
-.video-section > ul > li > figure {
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-  top: 0;
-  left: 0;
-}
 .video-container {
   position: relative;
   padding-top: 56.25%;
@@ -158,8 +163,13 @@ video {
   .main-3 {
     grid-area: bottom;
   }
-  .home {
-    height: 75vh;
+}
+
+@media screen and (max-width: 600px) {
+  .header-logo {
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 15%;
   }
 }
 
@@ -167,6 +177,71 @@ video {
   .main-section p {
     font-size: 1.9em;
     line-height: 2.2em;
+  }
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-overlay {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("img/background1.png");
+  background-size: cover;
+  background-position: center top;
+}
+
+.slider-main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+.gallery-slide {
+  background: transparent;
+  margin: 0 auto;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+
+.slider-img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slide-btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #e5e5e5;
+  font-size: 2rem;
+  background: #00aebe;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: solid #00aebe 2px;
+  margin-bottom: 25px;
+}
+
+.slide-btn:hover {
+  background: #e5e5e5;
+  border: solid #00aebe 2px;
+  text-decoration: none;
+  color: #00aebe;
+  cursor: pointer;
+}
+.btn-contain {
+  text-align: center;
+  padding-top: 75px;
+}
+@media (min-width: 1200px) {
+  .slide-overlay {
+    min-height: 500px;
   }
 }
 
