@@ -219,6 +219,10 @@ video {
   .bg {
     height: 300px;
   }
+  .video-section {
+    width: 85%;
+    margin-top: 10%;
+  }
 }
 
 h1 a {
