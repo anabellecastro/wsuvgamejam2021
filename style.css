@@ -48,6 +48,13 @@ h3 {
   padding: 20px;
   font-family: p22-pooper-black-pro, sans-serif;
 }
+
+p {
+  color: #ffffff;
+  font-size: 2em;
+  font-family: "Fira Sans", sans-serif;
+}
+
 .game-btn {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
