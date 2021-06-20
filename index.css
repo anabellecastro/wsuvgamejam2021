@@ -119,10 +119,12 @@ video {
 }
 
 .main-section {
+
   width: 90%;
   margin: 0 auto;
 }
 .grid {
+  align-items: center;
   display: grid;
   gap: 25px;
   grid-template-columns: 1fr 1fr;
@@ -244,11 +246,17 @@ video {
     min-height: 500px;
   }
 }
-
-/* footer {
+ul {
+  margin-right: 10px;
+}
+/* FOOTER GRADIENT */
+footer {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
   background: linear-gradient(
-    0deg,
-    rgba(40, 17, 59, 1) 0%,
-    rgba(27, 20, 100, 1) 100%
+    180deg,
+    rgba(27, 20, 100, 1) 0%,
+    rgba(39, 16, 58, 1) 100%
   );
-} */
+}

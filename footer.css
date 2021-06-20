@@ -5,11 +5,6 @@ footer {
   color: white;
   text-align: center;
   margin: 0 auto;
-  background: linear-gradient(
-    0deg,
-    rgba(39, 16, 58, 1) 0%,
-    rgba(30, 20, 86, 1) 100%
-  );
 }
 footer > img {
   margin-top: 8%;
