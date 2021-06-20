@@ -41,14 +41,14 @@
   width: auto;
   height: 65px;
   padding: 0;
-  padding-right: 3rem;
+  padding-right: 2rem;
 }
 
 .nav div.main_list ul li a {
   text-decoration: none;
   color: #e5e5e5;
   line-height: 80px;
-  font-size: 2.4rem;
+  /* font-size: 1.25em; */
   font-weight: 700;
 }
 
@@ -66,25 +66,25 @@
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.game-btn {
+/* .game-btn {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px;
   color: #e5e5e5;
-  font-size: 2rem;
-  background: #00aebe;
+  /* font-size: 2rem; */
+  /* background: #00aebe;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border: solid #00aebe 2px;
-}
+} */
 
-.game-btn:hover {
+/* .game-btn:hover {
   background: #e5e5e5;
   border: solid #00aebe 2px;
   text-decoration: none;
   color: #00aebe;
   cursor: pointer;
-}
+} */ 
 /* Media query section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -139,7 +139,7 @@
   .nav div.main_list ul li a {
     text-align: center;
     width: 100%;
-    font-size: 2.5rem;
+    /* font-size: 1.25rem; */
     padding: 20px;
     color: #e5e5e5;
   }
@@ -345,7 +345,6 @@
 
 .nav.linkScroll div.main_list ul li a {
   color: #e5e5e5;
-  font-size: 2.4rem;
 }
 
 .nav.linkScroll div.main_list ul li a:hover {
