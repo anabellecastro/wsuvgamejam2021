@@ -1,3 +1,6 @@
+body {
+  background: #1c1561;
+}
 #team-wrapper {
   float: left;
   margin: 0 auto;
@@ -95,6 +98,26 @@ a:active {
 @media screen and (max-width: 768px) {
   .team-section {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .team-header {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 620px;
+    background: url("img/webbanner.png");
+    background-size: 100% 100%;
+  }
+  .overlay img {
+    display: none;
+  }
+  .header-title {
+    position: relative;
+    top: 0;
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 /* FOOTER GRADIENT */
