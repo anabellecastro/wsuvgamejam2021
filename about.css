@@ -15,12 +15,28 @@
   padding: 0%;
 }
 
+a:link {
+  text-decoration: none;
+  color: #00aebe;
+  font-weight: 700;
+}
+a:visited {
+  color: #00aebe;
+}
+
+a:hover {
+  color: #e5e5e5;
+}
+a:active {
+  color: #e5e5e5;
+}
+
 .about-header {
   display: inline-block;
   position: relative;
   width: 100%;
   height: auto;
-  background-image: url("img/background4.png");
+  background-image: url("img/background2.png");
   background-position: center top;
   background-size: cover;
 }
