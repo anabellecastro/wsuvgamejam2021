@@ -37,7 +37,7 @@
   height: auto;
 }
 .header-logo {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 h3 {
@@ -211,7 +211,7 @@ video {
   width: 80%;
   margin: 0 auto;
   padding: 2% 0;
-  align-items: center;
+
 }
 .gallery-slide {
   background: transparent;
