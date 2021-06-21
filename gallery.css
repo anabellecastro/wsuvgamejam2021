@@ -12,18 +12,8 @@
   position: relative;
   width: 100%;
   height: auto;
-  
 }
 
-.overlay {
-  width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
 .header-title {
   margin: 0;
   position: absolute;
@@ -161,7 +151,9 @@ video {
 .bg {
   width: 100%;
   min-height: 250px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
   transform: scale(1, 1);
   transition: all 300ms ease;
   border-radius: 10px; /* FOR PLACEHOLDER PURPOSES. REMOVE LATER. */

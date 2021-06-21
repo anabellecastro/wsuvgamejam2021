@@ -19,6 +19,16 @@ body {
   background-size: cover;
 }
 
+.overlay {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .header-title {
   font-family: p22-pooper-black-pro, sans-serif;
   color: #f8f8ff;
@@ -99,6 +109,18 @@ p {
   body {
     font-size: 20px;
     line-height: 2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-title {
+    font-size: 4.5em;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .header-title {
+    font-size: 9em;
   }
 }
 
