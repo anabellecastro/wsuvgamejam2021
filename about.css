@@ -67,7 +67,7 @@ a:active {
 .overlay > p {
   padding: 0% 15%;
   margin-bottom: 2%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 
 .overlay {
@@ -170,7 +170,7 @@ a:active {
     grid-template-columns: 1fr;
   }
   .overlay > p {
-    padding: 0% 5%;
+    padding: 0% 10%;
     margin-bottom: 5%;
   }
   .about-section img {
