@@ -1,8 +1,11 @@
+body {
+  background: #1b1464;
+}
+
 #about-wrapper {
   float: left;
   margin: 0 auto;
-  width: 100%;
-  overflow: hidden;
+  padding: 0;
   background: linear-gradient(
     0deg,
     rgba(39, 16, 58, 1) 0%,
@@ -12,6 +15,16 @@
 .about-section > h3 {
   text-align: left;
   padding: 0%;
+}
+
+.about-items {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-items img {
+  display: flex;
+  justify-content: center;
 }
 
 a:link {
@@ -35,26 +48,44 @@ a:active {
   position: relative;
   width: 100%;
   height: auto;
-  background-image: url("img/about-header.png");
-  background-position: center top;
-  background-size: cover;
+}
+
+.about-title {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-title {
+  padding-top: 10%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .overlay > p {
   padding: 0% 15%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
+  margin-top: 5%;
 }
 
-#header-img {
-  height: 100%;
-  width: auto;
-  display: block;
-  padding-top: 8%;
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img {
+  /* width: 65%; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .about-section {
-  margin: 5% 0%;
-  padding: 0% 5%;
+  margin: 0 auto;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 5%;
@@ -64,6 +95,7 @@ a:active {
 .about-section img {
   max-width: 500px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .about-1 {
@@ -86,6 +118,10 @@ a:active {
 }
 
 @media screen and (max-width: 1024px) {
+  .about-img {
+    width: 30%;
+    padding-bottom: 0;
+  }
   .about-section {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -100,7 +136,36 @@ a:active {
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .about-img {
+    width: 40%;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-img {
+    width: 65%;
+  }
+  .header-title {
+    padding-top: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-section {
+    margin: 5% 0%;
+    padding: 0% 5%;
+  }
+  .about-items {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .about-img {
+    display: none;
+  }
   .about-section {
     grid-template-columns: 1fr;
   }
@@ -111,7 +176,40 @@ a:active {
   .about-section img {
     max-width: 55%;
   }
+
+  .about-items img {
+    padding-top: 10%;
+  }
 }
+
+@media screen and (min-width: 2000px) {
+  .about-header {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background: url("img/about-header.png");
+    background-size: 100% 100%;
+  }
+  .about-title {
+    display: none;
+  }
+  .about-img {
+    position: relative;
+    width: 70%;
+    top: 0;
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .overlay > h2 {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
 /* FOOTER GRADIENT */
 footer {
   width: 100%;
@@ -119,7 +217,7 @@ footer {
   margin: 0 auto;
   background: linear-gradient(
     180deg,
-    rgba(37, 17, 66, 1) 0%,
+    rgba(38, 16, 58, 1) 0%,
     rgba(27, 20, 100, 1) 100%
   );
 }

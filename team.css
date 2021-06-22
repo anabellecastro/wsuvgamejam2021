@@ -118,6 +118,18 @@ a:active {
     transform: translateY(-50%);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .header-title {
+    font-size: 4.5em;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .header-title {
+    font-size: 9em;
+  }
+}
 /* FOOTER GRADIENT */
 footer {
   width: 100%;

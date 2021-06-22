@@ -30,7 +30,7 @@ $(".slider-nav").slick({
   autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 800,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

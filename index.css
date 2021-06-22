@@ -170,10 +170,9 @@ video {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .header-logo {
-    width: 45%;
-    margin: 0 auto;
+    display: none;
   }
 }
 
