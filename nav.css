@@ -93,6 +93,13 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .nav div.logo {
+    padding-left: 15px;
+    padding-top: -10px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navTrigger {
     display: block;
