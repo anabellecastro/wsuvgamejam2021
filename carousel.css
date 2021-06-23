@@ -164,3 +164,39 @@ ul.slick-dots li:not(last-child) button:active {
     border: 2px solid #00aebe;
   }
 }
+
+/* .slick-prev,
+.slick-next {
+  font-size: 0;
+  position: absolute;
+  bottom: 20px;
+  color: #d5122f;
+  border: 0;
+  background: none;
+  z-index: 1;
+} */
+
+.slick-prev {
+  display: none !important;
+}
+
+.slick-prev:after {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
+}
+
+.slick-next:after {
+  display: none !important;
+}
+
+/* .slick-prev:hover:after,
+.slick-next:hover:after {
+  color: #7e7e7e;
+}  */
+.slick-prev:before,
+.slick-next:before {
+  display: none !important;
+}

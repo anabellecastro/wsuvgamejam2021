@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="carousel.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
     />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-lightbox.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
     <script type="text/javascript" src="slick/slick.min.js"></script>
   </head>
 
@@ -35,7 +35,8 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="team.html">Team</a></li>
             <li>
-              <a href="https://cmdcstudios.itch.io/huli?secret=AXxgguegP2sZVVHauLJfpt79huo"
+              <a
+                href="https://cmdcstudios.itch.io/huli?secret=AXxgguegP2sZVVHauLJfpt79huo"
                 ><button class="game-btn">itch</button></a
               >
             </li>
@@ -63,8 +64,8 @@
           <div class="video-section">
             <div class="video-container">
               <video controls poster="img/maomi-fight.png">
-                <source src="img/opening-scene.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
+                <source src="img/opening-scene.mp4" type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
                 Your browser does not support the video tag.
               </video>
               <!-- <iframe
@@ -131,62 +132,71 @@
             <div class="slider slider-nav">
               <div>
                 <div class="gallery-slide">
-                  <img src="img/Maomi.png" class="slider-img" />
+                  <a href="img/Maomi.png">
+                    <img src="img/Maomi.png" class="slider-img"
+                  /></a>
                 </div>
               </div>
               <div>
                 <div class="gallery-slide">
-                  <img
-                    src="img/huli.png"
-                    class="slider-img"
-                  />
+                  <a href="img/huli.png">
+                    <img src="img/huli.png" class="slider-img"
+                  /></a>
                 </div>
               </div>
               <div>
                 <div class="gallery-slide">
-                  <img src="img/que-islandwaterfall-web-asset-1.png" class="slider-img" />
+                  <a href="img/que-islandwaterfall-web-asset-1.png">
+                    <img
+                      src="img/que-islandwaterfall-web-asset-1.png"
+                      class="slider-img"
+                  /></a>
                 </div>
               </div>
               <div>
                 <div class="gallery-slide">
-                  <img
-                    src="img/environ_tree.png"
-                    class="slider-img"
-                  />
+                  <a href="img/environ_tree.png">
+                    <img src="img/environ_tree.png" class="slider-img"
+                  /></a>
                 </div>
               </div>
               <div>
                 <div class="gallery-slide">
-                  <img src="img/mollahan-environment-foxglove1.png" class="slider-img" />
+                  <a href="img/mollahan-environment-foxglove1.png">
+                    <img
+                      src="img/mollahan-environment-foxglove1.png"
+                      class="slider-img"
+                  /></a>
                 </div>
               </div>
               <div>
                 <div class="gallery-slide">
-                  <img src="img/mollahan-environment-BellPlant1.png" class="slider-img" />
+                  <a href="img/mollahan-environment-BellPlant1.png">
+                    <img
+                      src="img/mollahan-environment-BellPlant1.png"
+                      class="slider-img"
+                  /></a>
                 </div>
               </div>
               <div>
                 <div class="gallery-slide">
-                  <img
-                    src="img/placeholder-1.png"
-                    class="slider-img"
-                  />
+                  <a href="img/placeholder-1.png">
+                    <img src="img/placeholder-1.png" class="slider-img"
+                  /></a>
                 </div>
               </div>
               <div>
                 <div class="gallery-slide">
-                  <img
-                    src="img/placeholder-2.png"
-                    class="slider-img"
-                  />
+                  <a href="img/placeholder-2.png">
+                    <img src="img/placeholder-2.png" class="slider-img"
+                  /></a>
                 </div>
               </div>
               <div>
                 <div class="gallery-slide">
-                  <img
-                    src="img/placeholder-3.png"
-                    class="slider-img"
-                  />
+                  <a href="img/placeholder-3.png">
+                    <img src="img/placeholder-3.png" class="slider-img"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -215,5 +225,13 @@
       <div class="copyright"><p>© Huli 2021</p></div>
     </footer>
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="slick/slick-lightbox.js"></script>
+    <script type="text/javascript" src="slick/slick-lightbox.min.js"></script>
+    <script>
+      $(".slider-nav").slickLightbox({
+        itemSelector: "a",
+        navigateByKeyboard: true,
+      });
+    </script>
   </body>
 </html>
