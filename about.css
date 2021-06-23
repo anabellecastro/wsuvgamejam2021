@@ -78,6 +78,7 @@ a:active {
 
 .about-img {
   /* width: 65%; */
+  max-width: 350px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -174,7 +175,7 @@ a:active {
     margin-bottom: 5%;
   }
   .about-section img {
-    max-width: 55%;
+    max-width: 70%;
   }
 
   .about-items img {
