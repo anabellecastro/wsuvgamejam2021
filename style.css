@@ -129,8 +129,11 @@ p {
     line-height: 1.8em;
   }
 
-  .header-title {
+  .header-title h2 {
     display: none;
+  }
+  .header-title {
+    visibility: hidden;
   }
 }
 

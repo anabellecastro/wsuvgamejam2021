@@ -137,13 +137,13 @@ a:active {
     grid-area: bottom;
   }
 }
- 
+
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .about-img {
     width: 40%;
     padding-bottom: 0;
   }
-} 
+}
 
 @media screen and (min-width: 1200px) {
   .about-img {
@@ -166,7 +166,8 @@ a:active {
 
 @media screen and (max-width: 768px) {
   .about-img {
-    width: 65%;
+    visibility: visible !important;
+    width: 40%;
   }
   .about-section {
     grid-template-columns: 1fr;
@@ -181,6 +182,15 @@ a:active {
 
   .about-items img {
     padding-top: 10%;
+  }
+  .header-title {
+    visibility: visible !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
