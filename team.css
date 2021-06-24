@@ -40,7 +40,7 @@ body {
   text-align: center;
   width: 100%;
   overflow: hidden;
-  margin: 0 auto;
+  margin-top: 5%;
   background: linear-gradient(to bottom, #1c1462, #261344, #1c145f);
 }
 
@@ -48,14 +48,13 @@ body {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
 }
 
-/* .team-section > h3 {
-  font-family: p22-pooper-black-pro, sans-serif;
-  font-weight: 700;
+.team-section > h3 {
+  margin: 0;
 
-} */
+}
 
 a:link {
   text-decoration: none;

@@ -121,6 +121,7 @@ a:active {
 @media screen and (max-width: 1024px) {
   .about-img {
     width: 30%;
+    padding-top: 100px;
     padding-bottom: 0;
   }
   .about-section {
@@ -136,13 +137,13 @@ a:active {
     grid-area: bottom;
   }
 }
-
+ 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .about-img {
     width: 40%;
     padding-bottom: 0;
   }
-}
+} 
 
 @media screen and (min-width: 1200px) {
   .about-img {
@@ -165,7 +166,7 @@ a:active {
 
 @media screen and (max-width: 768px) {
   .about-img {
-    display: none;
+    width: 65%;
   }
   .about-section {
     grid-template-columns: 1fr;
