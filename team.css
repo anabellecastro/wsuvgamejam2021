@@ -51,16 +51,6 @@ body {
   margin-bottom: 5%;
 }
 
-.team-section > ul {
-  padding-left: 1rem;
-  grid-gap: 1rem;
-  padding-inline-start: 0%;
-}
-
-.team-section > ul > li {
-  max-height: 100%;
-  overflow: hidden;
-}
 /* .team-section > h3 {
   font-family: p22-pooper-black-pro, sans-serif;
   font-weight: 700;
