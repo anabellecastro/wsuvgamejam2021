@@ -70,6 +70,12 @@ p {
   color: #ffffff;
   font-family: "Fira Sans", sans-serif;
 }
+.caption{
+  font-style: italic;
+  font-weight: 300;
+  float: right;
+  font-size: .9em;
+}
 
 .game-btn {
   -webkit-border-radius: 5;

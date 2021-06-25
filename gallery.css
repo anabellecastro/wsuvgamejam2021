@@ -76,6 +76,12 @@ video {
   margin-top: 5%;
   padding: 1% 0;
 }
+.video-section > p {
+  font-style: italic;
+  font-weight: 300;
+  float: right;
+  font-size: .9em;
+}
 
 .video-container {
   position: relative;
