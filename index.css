@@ -33,11 +33,13 @@
   justify-content: center;
   display: flex;
 }
+
 .header-logo {
-  width: 40%;
+  max-height: 150px;
   margin: 0 auto;
   position: relative;
 }
+
 h3 {
   color: #ffffff;
   padding-bottom: 10px;
@@ -174,6 +176,7 @@ video {
     width: 85%;
     margin-top: 10%;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -253,7 +256,15 @@ video {
   text-align: center;
   padding-top: 75px;
 }
+@media (min-width: 768px) {
+  .header-logo {
+    max-height: 125px;
+  }
+}
 @media (min-width: 1200px) {
+  .header-logo {
+    max-height: 200px;
+  }
   .slide-overlay {
     min-height: 500px;
   }
@@ -272,6 +283,7 @@ video {
     display: none;
   }
   .header-logo {
+    max-height: 300px;
     position: relative;
     top: 0;
     -ms-transform: translateY(0%);
