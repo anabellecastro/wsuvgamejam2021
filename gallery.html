@@ -46,7 +46,7 @@
     <div id="gallery-wrapper">
       <section class="home">
         <div class="overlay">
-          <img src="img/gallery-header.png" alt="header image of gallery page featuring Seyyar Tedorov's artwork" />
+          <img src="img/gallery-header.jpg" alt="header image of gallery page featuring Seyyar Tedorov's artwork" />
           <h1 class="header-title">Gallery</h1>
         </div>
       </section>
@@ -54,7 +54,7 @@
         <div class="video-overlay">
           <div class="video-section">
             <div class="video-container">
-              <video controls poster="img/outro-placeholder.png">
+              <video controls poster="img/outro-placeholder.jpg">
                 <source src="img/Outro_Cutscene.mp4" type="video/mp4" />
                 <source src="movie.ogg" type="video/ogg" />
                 Your browser does not support the video tag.
@@ -73,47 +73,47 @@
             <div class="gallery clear">
               <div
                 class="bg"
-                style="background-image: url(img/gallery-img02.png)"
+                style="background-image: url(img/gallery-img02.jpg)"
                 data-caption="Cover art designed by Jei Shi"
               ></div>
               <div
                 class="bg"
-                style="background-image: url(img/gallery-img01.png)"
+                style="background-image: url(img/gallery-img01.jpg)"
                 data-caption="Cover art designed by Seyyar Tedorov"
               ></div>
               <div
                 class="bg"
-                style="background-image: url(img/gallery-img03.png)"
+                style="background-image: url(img/gallery-img03.jpg)"
                 data-caption="Cover art designed by Elyse Mollahan"
               ></div>
               <div
                 class="bg"
-                style="background-image: url(img/gallery-img05.png)"
+                style="background-image: url(img/gallery-img05.jpg)"
                 data-caption="Screen capture from opening cut-scene animation"
               ></div>
               <div
                 class="bg"
-                style="background-image: url(img/gallery-img04.png)"
+                style="background-image: url(img/gallery-img04.jpg)"
                 data-caption="Screen capture from end cut-scene animation"
               ></div>
               <div
                 class="bg"
-                style="background-image: url(img/gallery-img06.png)"
+                style="background-image: url(img/gallery-img06.jpg)"
                 data-caption="Screen capture from end cut-scene animation"
               ></div>
               <div
                 class="bg"
-                style="background-image: url(img/gallery-img08.png)"
+                style="background-image: url(img/gallery-img08.jpg)"
                 data-caption="character design for Huli and Maomi from Jei Shi"
               ></div>
               <div
                 class="bg"
-                style="background-image: url(img/gallery-img09.png)"
+                style="background-image: url(img/gallery-img09.jpg)"
                 data-caption="Bounce pad design from Kathy Klaus"
               ></div>
               <div
                 class="bg"
-                style="background-image: url(img/gallery-img07.png)"
+                style="background-image: url(img/gallery-img07.jpg)"
                 data-caption="3D modeled floating island from Keegan Walden"
               ></div>
               <!-- <div
@@ -188,7 +188,7 @@
           // added this part, not sure what I am missing. 
           infobar : false,
           caption : function( instance, item ) {
-          var caption = $(this).data('caption') || '';
+          var caption = $(this).data('data-caption') || '';
           
           return ( caption.length ? caption + '<br />' : '' ) + 'Image <span data-fancybox-index></span> of <span data-fancybox-count></span>';
         }          

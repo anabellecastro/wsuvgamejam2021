@@ -13,6 +13,7 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    
 }
 .slick-list {
     position: relative;
@@ -20,6 +21,7 @@
     display: block;
     margin: 0;
     padding: 0;
+    vertical-align: text-bottom;
 
     &:focus {
         outline: none;
@@ -46,6 +48,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-size: 16px;
+    vertical-align: text-bottom;
 
     &:before,
     &:after {
@@ -64,6 +68,7 @@
 .slick-slide {
     float: left;
     height: 100%;
+    vertical-align: text-bottom;
     min-height: 1px;
     [dir="rtl"] & {
         float: right;
