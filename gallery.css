@@ -46,6 +46,21 @@ h2 {
   padding: 20px;
 }
 
+p {
+  text-align: center;
+  color: #ffffff;
+}
+
+a {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00AEBE;
+}
+
 /* VIDEO SECTION */
 video {
   background-color: #28113b;
